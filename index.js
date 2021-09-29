@@ -16,6 +16,8 @@ app.use(express.static(path.join(__dirname, "public")));
 
 app.get("/", (req, res) => {
 
+    pokedex.sort((a, b) => a.numero - b.numero);
+    
     setTimeout(() => {
         message = "";
       }, 1000);
