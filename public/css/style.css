@@ -157,42 +157,36 @@
     margin: 0 20rem 10rem 20rem;
     box-shadow: 0 0 1rem #00000060;
     border-radius: 1rem;
-  }
+    width: 50%;
   
-  section#cadastrar h2 {
-    color: rgb(255, 68, 68);
-    text-align: center;
-    padding-bottom: 3rem;
-    font-size: 2.5rem;
-    width: 100%;
   }
   
   section#cadastrar form {
     width: 100%;
-    padding: 3rem;
+    padding: 0.6rem 2rem 0.6rem 2rem;
   }
   
   section#cadastrar form div input {
     width: 100%;
-    padding: 1rem;
-    font-size: 1.3rem;
+    padding: 0.5rem;
+    font-size: 1rem;
     margin-top: 0.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     outline: none;
     border: 0.1rem solid #ccc;
   }
   
   section#cadastrar form div label {
-    font-size: 1.3rem;
-    color: rgb(255, 0, 0);
+    font-size: 1.2rem;
+    color: rgb(236, 80, 32);
   }
   
   section#cadastrar form button {
     border: 1px solid rgb(255, 68, 68);
     background-color: #fff;
-    color: rgb(255, 68, 68);
-    padding: 1rem;
-    font-size: 0.8vw;
+    color: rgb(236, 80, 32);
+    padding: 0.6rem;
+    font-size: 1.3vw;
     font-weight: 600;
     border-radius: 0.5rem;
     display: block;
@@ -200,11 +194,11 @@
     margin-top: 2rem;
     cursor: pointer;
     transition: 0.3s ease-out;
-    width: 40%;
+    width: 30%;
   }
   
   section#cadastrar form button:hover {
-    background-color: rgb(255, 68, 68);
+    background-color: rgb(179, 173, 173);
     color: #fff;
     transform: scale(1.1);
   }
@@ -317,3 +311,19 @@
     }
   }
 
+  @media (min-width: 461px) and (max-width: 960px) {
+    section#cadastrar, section#cadastrar form div input, section#cadastrar form div label { 
+      display: block;
+      overflow: hidden;
+      width: 79%;
+      padding: 1%;
+      margin: auto;
+    
+    }
+  }
+
+  @media (min-width: 461px) and (max-width: 960px) {
+    section#cadastrar form button {
+    font-size: 2.5vw;
+    }
+  }
